@@ -614,6 +614,37 @@ footer {
     bottom: 0;
 }
 
+footer a#poemLink {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 6px;
+    transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.1s ease, background-color 0.2s ease;
+}
+
+footer a#poemLink,
+footer a#poemLink:link,
+footer a#poemLink:visited,
+footer a#poemLink:hover,
+footer a#poemLink:active,
+footer a#poemLink:focus {
+    color: #ffffff;
+}
+
+footer a#poemLink:hover {
+    background: transparent;
+    text-shadow: none;
+}
+
+footer a#poemLink:active {
+    transform: scale(1.12);
+}
+
+footer a#poemLink.pressed {
+    transform: scale(1.12);
+}
+
 @media (min-width: 800px) {
 
     .index-logo {

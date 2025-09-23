@@ -68,15 +68,19 @@ function showEmail() {
         tcMainElement.dataset.restoreStyle = tcMainElement.style.cssText || '';
     }
     tcMainElement.style.width = '90%';
-    tcMainElement.style.maxWidth = '640px';
-    tcMainElement.innerHTML = '<div style="padding:20px;max-width:320px;text-align:center">'
-        + '<h3 style="margin-bottom:10px;color:#333">联系邮箱</h3>'
-        + '<a href="https://wx.mail.qq.com/home/index#/compose" target="_blank" style="display:inline-block;color:#3366cc;text-decoration:underline;word-break:break-all">195224642@qq.com</a>'
-        + '<div style="margin-top:10px">'
-        +   '<button id="copyEmail" style="padding:6px 12px;border-radius:6px;border:1px solid #ddd;cursor:pointer">复制邮箱号</button>'
-        + '</div>'
-        + '<div style="margin-top:8px;color:#888;font-size:12px">点击邮箱将在新标签打开新版写信页</div>'
+    tcMainElement.style.maxWidth = '360px';
+    var card = ''
+        + '<div style="background:#fff;opacity:1;filter:none;backdrop-filter:none;border-radius:16px;padding:14px;max-width:360px;width:90vw;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 6px 24px background:#fff">'
+        +   '<div style="flex:1;min-width:0;text-align:center">'
+        +     '<div style="font-weight:900;font-size:20px;color:#111;letter-spacing:.2px">Mail</div>'
+        +     '<div style="margin-top:10px;font-size:14px;color:#111;font-weight:800;white-space:nowrap">'
+        +       '<a href="mailto:195224642@qq.com" style="color:#3366cc;text-decoration:underline;word-break:break-all">195224642@qq.com</a>'
+        +     '</div>'
+        +     '<div style="margin-top:8px;display:flex;justify-content:center">'
+        +       '<button id="copyEmail" style="padding:6px 12px;border-radius:8px;border:1px solid #ddd;cursor:pointer;background:#fff">复制邮箱号</button>'
+        +     '</div>'
         + '</div>';
+    tcMainElement.innerHTML = card;
     toggleClass('.tc-main', 'active');
     toggleClass('.tc', 'active');
     setTimeout(function(){
@@ -97,20 +101,19 @@ function showQQCard() {
         tcMainElement.dataset.restoreStyle = tcMainElement.style.cssText || '';
     }
     tcMainElement.style.width = '90%';
-    tcMainElement.style.maxWidth = '640px';
+    tcMainElement.style.maxWidth = '360px';
     var card = ''
-        + '<div style="background:#ffffff;border-radius:16px;padding:22px 24px;max-width:620px;width:90vw;display:flex;gap:20px;align-items:center;box-shadow:0 6px 24px rgba(0,0,0,.08)">'
-        +   '<div style="flex:1;min-width:260px">'
-        +     '<div style="font-weight:800;font-size:28px;color:#111;letter-spacing:.3px">QQ</div>'
-        +     '<div style="margin-top:16px;font-size:16px;color:#111;font-weight:700">User Name：<span style="font-weight:600">十五</span></div>'
-        +     '<div style="margin-top:8px;font-size:16px;color:#333">ID：<span style="font-weight:700">195224642</span></div>'
-        +     '<div style="margin-top:12px;font-size:12px;color:#888">使用 QQ 扫码添加好友</div>'
+        + '<div style="background:#fff;opacity:1;filter:none;backdrop-filter:none;border-radius:16px;padding:14px;max-width:360px;width:90vw;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 6px 24px rgba(0,0,0,.08)">'
+        +   '<div style="flex:1;min-width:0">'
+        +     '<div style="font-weight:900;font-size:20px;color:#111;letter-spacing:.2px">QQ</div>'
+        +     '<div style="margin-top:10px;font-size:14px;color:#111;font-weight:800;white-space:nowrap">User Name：<span style="font-weight:600">十五</span></div>'
+        +     '<div style="margin-top:6px;font-size:14px;color:#333;white-space:nowrap">ID：<span style="font-weight:700">195224642</span></div>'
         +   '</div>'
-        +   '<div style="width:210px;height:210px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:14px;flex-shrink:0;overflow:hidden">'
-        +     '<img src="./static/img/qq.jpg" alt="QQ二维码" style="width:260px;height:260px;object-fit:cover;object-position:center 50%">'
+        +   '<div style="width:170px;height:170px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;flex-shrink:0;overflow:hidden;border:2px solid rgba(0,0,0,0.06)">'
+        +     '<img src="./static/img/qq.jpg" alt="QQ二维码" style="width:260px;height:260px;object-fit:cover;object-position:center;transform:scale(1.03) translateY(-10px)">'
         +   '</div>'
         + '</div>'
-        + '<style>@media(max-width:520px){.tc-main .qq-card-left{min-width:0} }</style>';
+        + '<style>@media(max-width:520px){.tc-main .qq-card-left{min-width:0}}</style>';
     tcMainElement.innerHTML = card;
     toggleClass('.tc-main', 'active');
     toggleClass('.tc', 'active');
@@ -123,17 +126,16 @@ function showWeChatCard() {
         tcMainElement.dataset.restoreStyle = tcMainElement.style.cssText || '';
     }
     tcMainElement.style.width = '90%';
-    tcMainElement.style.maxWidth = '640px';
+    tcMainElement.style.maxWidth = '360px';
     var card = ''
-        + '<div style="background:#ffffff;border-radius:16px;padding:22px 24px;max-width:620px;width:90vw;display:flex;gap:20px;align-items:center;box-shadow:0 6px 24px rgba(0,0,0,.08)">'
-        +   '<div style="flex:1;min-width:260px">'
-        +     '<div style="font-weight:800;font-size:28px;color:#111;letter-spacing:.3px">WeChat</div>'
-        +     '<div style="margin-top:16px;font-size:16px;color:#111;font-weight:700">User Name：<span style="font-weight:600">十五</span></div>'
-        +     '<div style="margin-top:8px;font-size:16px;color:#333">ID：<span style="font-weight:700">yzh195224642</span></div>'
-        +     '<div style="margin-top:12px;font-size:12px;color:#888">使用 微信 扫码添加好友</div>'
+        + '<div style="background:#fff;opacity:1;filter:none;backdrop-filter:none;border-radius:16px;padding:14px;max-width:360px;width:90vw;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 6px 24px rgba(0,0,0,.08)">'
+        +   '<div style="flex:1;min-width:0">'
+        +     '<div style="font-weight:900;font-size:20px;color:#111;letter-spacing:.2px">WeChat</div>'
+        +     '<div style="margin-top:10px;font-size:14px;color:#111;font-weight:800;white-space:nowrap">User Name：<span style="font-weight:600;margin-left:4px">十五</span></div>'
+        +     '<div style="margin-top:6px;font-size:14px;color:#111;font-weight:800;white-space:nowrap">ID：<span style="font-weight:600;margin-left:4px">yzh195224642</span></div>'
         +   '</div>'
-        +   '<div style="width:210px;height:210px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:14px;flex-shrink:0;overflow:hidden">'
-        +     '<img src="./static/img/wxjpg.jpg" alt="微信二维码" style="width:340px;height:340px;object-fit:cover;transform:translateY(-10px);">'
+        +   '<div style="width:170px;height:170px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;flex-shrink:0;overflow:hidden;border:2px solid rgba(0,0,0,0.06)">'
+        +     '<img src="./static/img/wxjpg.jpg" alt="微信二维码" style="width:260px;height:260px;object-fit:cover;object-position:center;transform:scale(1.05) translateY(-6px)">'
         +   '</div>'
         + '</div>';
     tcMainElement.innerHTML = card;
@@ -248,6 +250,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+	// footer poem switcher
+	var poemLink = document.getElementById('poemLink');
+	if (poemLink) {
+		var poems = [
+			'欲买桂花同载酒  终不似少年游',
+            '年年岁岁花相似  岁岁年年人不同',
+            '人面不知何处去   桃花依旧笑春风',
+            '春花秋月何时了  往事知多少',
+            '此情可待成追忆？只是当时已惘然',
+            '人生若只如初见  何事秋风悲画扇',
+            '花有重开日，人无再少年'
+		];
+
+		function randomPoem(currentText) {
+			if (poems.length === 0) return currentText;
+			var next = currentText;
+			var guard = 0;
+			while (next === currentText && guard < 10) {
+				next = poems[Math.floor(Math.random() * poems.length)];
+				guard++;
+			}
+			return next;
+		}
+
+		poemLink.addEventListener('click', function (e) {
+			e.preventDefault();
+			poemLink.textContent = randomPoem(poemLink.textContent.trim());
+		});
+
+		// press feedback for scaling
+		poemLink.addEventListener('mousedown', function(){
+			poemLink.classList.add('pressed');
+		});
+		poemLink.addEventListener('mouseup', function(){
+			poemLink.classList.remove('pressed');
+		});
+		poemLink.addEventListener('mouseleave', function(){
+			poemLink.classList.remove('pressed');
+		});
+		poemLink.addEventListener('touchstart', function(){
+			poemLink.classList.add('pressed');
+		}, {passive:true});
+		poemLink.addEventListener('touchend', function(){
+			poemLink.classList.remove('pressed');
+		});
+	}
 
 
 
