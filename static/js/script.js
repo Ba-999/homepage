@@ -1,6 +1,3 @@
-console.log('%cCopyright © 2024 zyyo.net',
-    'background-color: #ff00ff; color: white; font-size: 24px; font-weight: bold; padding: 10px;'
-);
 console.log('%c   /\\_/\\', 'color: #8B4513; font-size: 20px;');
 console.log('%c  ( o.o )', 'color: #8B4513; font-size: 20px;');
 console.log(' %c  > ^ <', 'color: #8B4513; font-size: 20px;');
@@ -217,9 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-
-
+    
 
 
     var Checkbox = document.getElementById('myonoffswitch')
@@ -240,26 +235,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     changeTheme(themeState);
-
-
-
-
-
-
-
-
-
-
 	// footer poem switcher
 	var poemLink = document.getElementById('poemLink');
 	if (poemLink) {
 		var poems = [
-			'欲买桂花同载酒  终不似少年游',
-            '年年岁岁花相似  岁岁年年人不同',
-            '人面不知何处去   桃花依旧笑春风',
-            '春花秋月何时了  往事知多少',
+			'欲买桂花同载酒，终不似少年游',
+            '年年岁岁花相似，岁岁年年人不同',
+            '人面不知何处去，桃花依旧笑春风',
+            '春花秋月何时了，往事知多少',
             '此情可待成追忆？只是当时已惘然',
-            '人生若只如初见  何事秋风悲画扇',
+            '人生若只如初见，何事秋风悲画扇',
             '花有重开日，人无再少年'
 		];
 
