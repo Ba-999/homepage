@@ -11,7 +11,7 @@
     if (document.getElementById('dynamic-music-style')) return;
     const style = document.createElement('style');
     style.id = 'dynamic-music-style';
-    style.textContent = `.music-box{width:50px;height:50px;overflow:hidden;border-radius:50px;background:rgba(255,255,255,.25);box-shadow:0 8px 32px 0 rgba(0,0,0,.15);backdrop-filter:blur(10px) saturate(180%);-webkit-backdrop-filter:blur(10px) saturate(180%);position:relative;flex-shrink:0}.music{box-sizing:content-box;position:fixed;bottom:65px;left:20px;width:50px;height:50px;background:rgba(255,255,255,.35);box-shadow:0 4px 6px rgba(0,0,0,.1);border-radius:50px;overflow:hidden;backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);transition:width .5s,background .4s;display:flex;align-items:center;z-index:999}.music:hover{width:280px;background:rgba(255,255,255,.35);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music-img{width:50px;height:50px;transition:transform .4s linear}.play-btn{-webkit-tap-highlight-color:transparent;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:28px;height:28px;background:rgba(70,70,70,.2);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer}.music-info{display:none;flex-direction:row;align-items:center;height:50px;margin-left:16px;width:206px;overflow:hidden}.music-box:hover .play-btn{display:flex!important}.music:hover .music-info{display:flex}.music-box .note-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:35px;height:35px;display:none;pointer-events:none;z-index:2}.music-box.show-note .note-icon{display:block}.info-texts{display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0}.song-title{font-size:16px;font-weight:700;color:#16b597;line-height:1.2;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}.song-lyric{font-size:13px;color:#ff9a3d;line-height:22px;font-weight:700;height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}.song-lyric-anim{display:inline-block;opacity:0;transform:translateY(10px);animation:lyric-fade-move .5s cubic-bezier(.4,0,.2,1) forwards}@keyframes lyric-fade-move{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.next-btn{-webkit-tap-highlight-color:transparent;margin-left:13px;background:#16b597;color:#fff;border:none;border-radius:16px;padding:6px 9px;cursor:pointer;font-size:13px;height:32px;display:flex;align-items:center;justify-content:center;transition:background .2s}.next-btn:hover{background:#199988}@keyframes img-rotate{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes img-rotate-reset{from{transform:rotate(var(--img-rotate-angle,0deg))}to{transform:rotate(0)}}@media (max-width:600px){.music{bottom:92px;left:-340px;width:50px;min-width:50px;transition:left .8s cubic-bezier(.4,0,.2,1),width 1s;z-index:9999;background:rgba(255,255,255,.35);-webkit-box-shadow:0 0 0 1px rgba(80,80,80,.5);border-radius:50px;overflow:hidden;backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music.expanded{left:55px!important}.music-info{display:flex!important;width:177px!important}.music-toggle-btn,.play-btn{display:flex!important}}.music-toggle-btn{-webkit-tap-highlight-color:transparent;position:fixed;left:10px;bottom:100px;width:36px;height:36px;background:rgba(255,255,255,.85);border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.15);align-items:center;justify-content:center;cursor:pointer;z-index:10000;display:none;border:none;border:2px rgb(255 255 255 / 90%) solid;backdrop-filter:blur(20px) saturate(300%)}.music-toggle-btn svg{width:18px;height:18px}.lock-btn{-webkit-tap-highlight-color:transparent;position:absolute;left:0;transform:translateX(-50%);width:25px;height:25px;background:rgb(200 200 200 / 45%);border:none;border-radius:50%;cursor:pointer;color:#fff;font-size:14px;align-items:center;justify-content:center;transition:left .3s ease;z-index:1;display:none;box-shadow:inset 0 0 15px 1px rgb(161 161 161/50%)}.music:hover .lock-btn{display:flex;top:1px;left:65px}@media (min-width:601px){.lock-btn{align-items:center;justify-content:center}.music.locked{width:280px!important;background:rgba(255,255,255,.55);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music.locked .music-info{display:flex}}.next-icon{width:18px;height:18px}`;
+    style.textContent = `.music-box{width:50px;height:50px;overflow:hidden;border-radius:50px;background:rgba(255,255,255,.25);box-shadow:0 8px 32px 0 rgba(0,0,0,.15);backdrop-filter:blur(10px) saturate(180%);-webkit-backdrop-filter:blur(10px) saturate(180%);position:relative;flex-shrink:0}.music{box-sizing:content-box;position:fixed;bottom:65px;left:20px;width:50px;height:50px;background:rgba(255,255,255,.35);box-shadow:0 4px 6px rgba(0,0,0,.1);border-radius:50px;overflow:hidden;backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);transition:width .5s,background .4s;display:flex;align-items:center;z-index:999}.music:hover{width:280px;background:rgba(255,255,255,.35);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music-img{width:50px;height:50px;transition:transform .4s linear}.play-btn{-webkit-tap-highlight-color:transparent;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:28px;height:28px;background:rgba(70,70,70,.2);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer}.music-info{display:none;flex-direction:row;align-items:center;height:50px;margin-left:16px;width:206px;overflow:hidden}.music-box:hover .play-btn{display:flex!important}.music:hover .music-info{display:flex}.music-box .note-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:35px;height:35px;display:none;pointer-events:none;z-index:2}.music-box.show-note .note-icon{display:block}.info-texts{display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0}.song-title{font-size:16px;font-weight:700;color:#16b597;line-height:1.2;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}.song-lyric{font-size:13px;color:#ff9a3d;line-height:22px;font-weight:700;height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}.song-lyric-anim{display:inline-block;opacity:0;transform:translateY(10px);animation:lyric-fade-move .5s cubic-bezier(.4,0,.2,1) forwards}@keyframes lyric-fade-move{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.next-btn{-webkit-tap-highlight-color:transparent;margin-left:13px;background:#16b597;color:#fff;border:none;border-radius:16px;padding:6px 9px;cursor:pointer;font-size:13px;height:32px;display:flex;align-items:center;justify-content:center;transition:background .2s}.next-btn:hover{background:#199988}@keyframes img-rotate{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes img-rotate-reset{from{transform:rotate(var(--img-rotate-angle,0deg))}to{transform:rotate(0)}}@media (max-width:600px){.music{bottom:92px;left:-340px;width:50px;min-width:50px;transition:left .8s cubic-bezier(.4,0,.2,1),width 1s;z-index:9999;background:rgba(255,255,255,.35);-webkit-box-shadow:0 0 0 1px rgba(80,80,80,.5);border-radius:50px;overflow:hidden;backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music.expanded{left:55px!important}.music-info{display:flex!important;width:177px!important}.music-toggle-btn,.play-btn{display:flex!important}}.music-toggle-btn{-webkit-tap-highlight-color:transparent;position:fixed;left:10px;bottom:100px;width:36px;height:36px;background:rgba(255,255,255,.85);border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.15);align-items:center;justify-content:center;cursor:pointer;z-index:10000;display:none;border:none;border:2px rgb(255 255 255 / 90%) solid;backdrop-filter:blur(20px) saturate(300%)}.music-toggle-btn svg{width:18px;height:18px}.lock-btn{-webkit-tap-highlight-color:transparent;position:absolute;left:0;transform:translateX(-50%);width:25px;height:25px;background:rgb(200 200 200 / 45%);border:none;border-radius:50%;cursor:pointer;color:#fff;font-size:14px;align-items:center;justify-content:center;transition:left .3s ease;z-index:1;display:none!important;box-shadow:inset 0 0 15px 1px rgb(161 161 161/50%)}@media (min-width:601px){.lock-btn{align-items:center;justify-content:center}.music.locked{width:280px!important;background:rgba(255,255,255,.55);backdrop-filter:blur(18px) saturate(180%);-webkit-backdrop-filter:blur(18px) saturate(180%);border:3px solid rgba(255,255,255,.18);box-shadow:0 8px 32px 0 rgba(0,0,0,.15)}.music.locked .music-info{display:flex}}.next-icon{width:18px;height:18px}`;
     document.head.appendChild(style);
 })();
 
@@ -130,6 +130,85 @@ const songs = [
 [03:36.63] 天青色等烟雨 而我在等你​
 [03:42.99] 月色被打捞起 晕开了结局​
 [03:49.97] 如传世的青花瓷自顾自美丽 你眼带笑意`
+    }
+
+    ,{
+        title: 'Payphone',
+        cover: './static/music/4.jpg',
+        src: './static/music/4.mp3',
+        lyric: `[00:00.00] 作词：Adam Levine、Benny Blanco、Ammar Malik、Robopop  作曲：Shellback、Benny Blanco
+[00:03.15] I'm at a payphone trying to call home
+[00:08.92] All of my change I spent on you
+[00:14.78] Where have the times gone
+[00:17.71] Baby it's all wrong
+[00:20.64] Where are the plans we made for two
+[00:24.57] Yeah I I know it's hard to remember
+[00:28.50] The people we used to be
+[00:32.43] It's even harder to picture
+[00:35.36] That you're not here next to me
+[00:38.29] You say it's too late to make it
+[00:41.22] But is it too late to try
+[00:44.15] And in our time that you wasted
+[00:47.08] All of our bridges burned down
+[00:50.01] I've wasted my nights
+[00:52.94] You turned out the lights
+[00:55.87] Now I'm paralyzed
+[00:58.80] Still stuck in that time
+[01:01.73] When we called it "Love"
+[01:04.66] But even the sun
+[01:07.59] Sets in paradise
+[01:10.52] I'm at a payphone trying to call home
+[01:16.39] All of my change I spent on you
+[01:22.26] Where have the times gone
+[01:25.19] Baby it's all wrong
+[01:28.12] Where are the plans we made for two
+[01:32.05] If happy-ever-after's did exist
+[01:35.98] I would still be holding you like this
+[01:39.91] All those fairytales are full of ****
+[01:42.84] One more ******* love song I'll be sick oh
+[01:46.77] You turned your back on tomorrow
+[01:49.70] 'Cause you forgot yesterday
+[01:52.63] I gave you my love to borrow
+[01:55.56] But you just gave it away
+[01:58.49] You can't expect me to be fine
+[02:01.42] I don't expect you to care
+[02:04.35] I know I said it before
+[02:07.28] But all of our bridges burned down
+[02:10.21] I've wasted my nights
+[02:13.14] You turned out the lights
+[02:16.07] Now I'm paralyzed
+[02:19.00] Still stuck in that time
+[02:21.93] When we called it "Love"
+[02:24.86] But even the sun
+[02:27.79] Sets in paradise
+[02:30.72] I'm at a payphone trying to call home
+[02:36.59] All of my change I spent on you
+[02:39.52] Whoa whoa-oa
+[02:41.48] Where have the times gone
+[02:44.41] Baby it's all wrong
+[02:47.34] Where are the plans we made for two
+[02:50.27] Yeah
+[02:51.24] If happy-ever-after's did exist
+[02:54.17] I would still be holding you like this
+[02:57.10] And all those fairytales are full of ****
+[03:00.03] One more ******* love song I'll be sick
+[03:03.96] Uh Now I'm at a payphone
+[03:06.89] Man **** that ****
+[03:08.86] I'll be out spending all this money while you're sitting 'round
+[03:11.79] Wondering why it wasn't you who came up from nothin'
+[03:14.72] Made it from the bottom now when you see me I'm stuntin'
+[03:17.65] And all of my cars start with the push of a button
+[03:20.58] Telling me I changed since I blew up or whatever you call it
+[03:23.51] Switched the number to my phone so you never could call it
+[03:26.44] Don't need my name on my shirt you can tell that I'm ballin'
+[03:29.37] Swish what a shame coulda got picked
+[03:31.33] Had a really good game but you missed your last shot
+[03:34.26] So you talk about who you see at the top
+[03:37.19] Or what you could've saw but sad to say it's over for
+[03:40.12] Phantom pulled up valet open doors
+[03:42.09] Wished I'd go away got what you was looking for
+[03:45.02] Now it's me who they want
+[03:47.95] So you can go take that little piece of **** with you`
     }
 
 ];
