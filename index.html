@@ -53,7 +53,7 @@
 						<div class="focus"></div>
 						<div>敬请期待
 						</div>
-						<div>2024.1</div>
+						<div>2025.10</div>
 					</li>
 					<li>
 						<div class="focus"></div>
@@ -86,10 +86,12 @@
 					Hello I' m <span class="gradientText">
 						Ye </span>
 				</div>
-				<div class="description"> <span class="purpleText">Welcome to my homepage</span>
+				<div class="description"> <span class="gradientText">Welcome to my homepage</span>
 				</div>
-				<div class="description"><span class="purpleText textBackground">Wish</span> you
-					a <span class="purpleText textBackground">nice</span> day！ </div>
+				<div class="description">
+					<span class="gradientText">I'm </span><span id="typewriter" class="gradientText"></span><span class="typewriter-caret">|</span>
+				</div>
+				<div class="description" id="greeting"><span class="gradientText">Wish you a nice day！</span></div>
 
 
 
@@ -251,5 +253,51 @@
 
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" })</script>
+
+<!-- 主页体验增强：打字机 / 动态问候（页脚诗词保持 script.js 本地列表） -->
+<style>
+	.typewriter-caret{display:inline-block;margin-left:2px;animation:tw-blink 1s step-end infinite;background:var(--gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-weight:800}
+	@keyframes tw-blink{50%{opacity:0}}
+	/* emoji 保留原生彩色：不参与渐变裁剪 */
+	.greeting-emoji{display:inline-block;margin-left:4px;-webkit-text-fill-color:initial;color:initial;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+</style>
+<script>
+(function(){
+	// 1. 打字机：循环切换身份
+	var roles = ['a Java Developer', 'a Front-end Learner', 'a Traveler', 'a Dreamer', 'from Henan'];
+	var tw = document.getElementById('typewriter');
+	if (tw) {
+		var roleIdx = 0, charIdx = 0, deleting = false;
+		function tick() {
+			var full = roles[roleIdx];
+			if (!deleting) {
+				charIdx++;
+				tw.textContent = full.slice(0, charIdx);
+				if (charIdx === full.length) { deleting = true; return setTimeout(tick, 1600); }
+			} else {
+				charIdx--;
+				tw.textContent = full.slice(0, charIdx);
+				if (charIdx === 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; }
+			}
+			setTimeout(tick, deleting ? 50 : 110);
+		}
+		tick();
+	}
+
+	// 2. 动态问候：按时段替换（emoji 单独放在渐变 span 外，保留原生彩色）
+	var g = document.getElementById('greeting');
+	if (g) {
+		var h = new Date().getHours();
+		var text, emoji;
+		if (h < 6)       { text = '夜深了，早点休息'; emoji = '🌙'; }
+		else if (h < 11) { text = '早上好，愿你今天元气满满'; emoji = '☀️'; }
+		else if (h < 14) { text = '中午好，记得好好吃饭'; emoji = '🍚'; }
+		else if (h < 18) { text = '下午好，愿你有个美好的午后'; emoji = '🌿'; }
+		else if (h < 22) { text = '晚上好，愿你度过愉快的夜晚'; emoji = '🌆'; }
+		else             { text = '夜已深，愿你好梦'; emoji = '✨'; }
+		g.innerHTML = '<span class="gradientText">' + text + '</span> <span class="greeting-emoji">' + emoji + '</span>';
+	}
+})();
+</script>
 
 </html>
