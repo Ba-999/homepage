@@ -91,7 +91,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     transition: color 0.1s ease;
     color: var(--main_text_color);
 
@@ -195,6 +195,7 @@ body {
     margin-top: 50px;
     background-size: cover;
     border-radius: 50%;
+    transition: none;
 }
 
 
@@ -251,45 +252,55 @@ body {
     background: var(--left_tag_item);
 }
 
-#line {
-    width: 100%;
-    height: 200px;
+/* ---------- 计时器 ---------- */
+#countup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.countup-label {
     font-size: 13px;
-    padding-left: 8px;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    color: var(--item_left_text_color, #888);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
 }
 
-#line li {
-    list-style: none;
-    position: relative;
-    padding: 15px 0px 0px 15px;
-    border-left: 2px solid #d5d5d5;
-    border-radius: 0;
-    scroll-snap-align: end;
+.countup-days {
+    font-size: 15px;
+    font-weight: 700;
     color: var(--main_text_color);
+    margin-bottom: 6px;
 }
 
-
-
-.focus {
-    width: 8px;
-    height: 8px;
-    border-radius: 22px;
-    background-color: rgb(255 255 255);
-    border: 2px solid #fff;
-    position: absolute;
-    left: -5px;
-    top: 50%;
+.countup-days span {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "title", "b", sans-serif;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    line-height: 1;
 }
 
-#line li:first-child .focus:first-child {
-    background-color: #aaffcd;
-    animation: focus 1.8s ease infinite;
+.countup-clock {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main_text_color);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-#line::-webkit-scrollbar {
-    display: none;
+.countup-since {
+    font-size: 12px;
+    color: var(--item_left_text_color, #888);
+    letter-spacing: 1px;
 }
 
 
@@ -319,6 +330,7 @@ body {
     background-size: cover;
     border-radius: 50%;
     border: 0.5px solid #ffffff;
+    transition: none;
 }
 .description {
 

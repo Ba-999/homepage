@@ -19,7 +19,7 @@
 - **打字机效果**：循环展示身份标签（Java Developer / Front-end Learner / Traveler / Dreamer / from Henan）
 - **动态时段问候**：根据当前时间自动切换问候语和对应 emoji（凌晨 / 早 / 午 / 下午 / 晚 / 深夜）
 - **页脚诗词**：保留本地诗词列表轮换
-- **时间线**：左侧展示个人成长大事记（接触电脑 → 注册域名 → 仿写主页 …）
+- **网站运行计时器**：左侧实时显示本站已运行天数 + 精确到秒的时钟（始于 2025.10）
 
 ### 🎵 悬浮音乐播放器（新增）
 - 极简悬浮胶囊式播放器，基于 `static/music/music.js` 动态注入
@@ -98,7 +98,7 @@ python -m http.server 8080
 | 诗词列表 | `static/js/script.js` |
 | 音乐曲目 / 歌词 | `static/music/music.js` 中的 `songs` 数组 |
 | 项目卡片 / 链接 | `index.html` 中 `.projectList` 区块 |
-| 左侧标签 / 时间线 | `index.html` 中 `.left-tag`、`.left-time` |
+| 左侧标签 / 计时器 | `index.html` 中 `.left-tag`、`#countup`，起始日期在 `script.js` 中改 `start` |
 
 > SVG 图标如需替换：去除 `width / height / fill` 信息后再使用，可继承主题色。
 
@@ -111,6 +111,23 @@ python -m http.server 8080
 - Docker 化贡献者：[starry / sky22333](https://github.com/sky22333)
 - 技能图标：[tandpfun/skill-icons](https://github.com/tandpfun/skill-icons)
 - 图标库：[iconfont](https://www.iconfont.cn/)
+
+---
+
+## 📝 更新日志
+
+### 2025.05 — 本次改动
+
+**1. 时间线 → 网站运行计时器**
+- 左侧 `left-time` 区域由静态时间线替换为实时计时器
+- 显示「本站已运行 X 天 HH:MM:SS」，每秒刷新
+- HTML：[index.html](index.html) `.left-time #countup`
+- CSS：[style.css](static/css/style.css) `#countup` 相关样式
+- JS：[script.js](static/js/script.js) 计时器逻辑，起始日期 `new Date('2025-10-01')`
+
+**2. 移动端头像闪动修复**
+- `body` 的 `background-attachment: fixed` → `scroll`（iOS Safari 重绘导致闪动）
+- `.logo` 和 `.index-logo` 添加 `transition: none`（全局 `transition` 干扰了头像渲染）
 
 ---
 

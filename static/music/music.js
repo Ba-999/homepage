@@ -139,82 +139,129 @@ const songs = [
     }
 
     ,{
-        title: 'Payphone',
+        title: '잘 알지도 못하면서 - Lim Kim',
         cover: './static/music/4.jpg',
         src: './static/music/4.mp3',
-        lyric: `[00:00.00] 作词：Adam Levine、Benny Blanco、Ammar Malik、Robopop  作曲：Shellback、Benny Blanco
-[00:03.15] I'm at a payphone trying to call home
-[00:08.92] All of my change I spent on you
-[00:14.78] Where have the times gone
-[00:17.71] Baby it's all wrong
-[00:20.64] Where are the plans we made for two
-[00:24.57] Yeah I I know it's hard to remember
-[00:28.50] The people we used to be
-[00:32.43] It's even harder to picture
-[00:35.36] That you're not here next to me
-[00:38.29] You say it's too late to make it
-[00:41.22] But is it too late to try
-[00:44.15] And in our time that you wasted
-[00:47.08] All of our bridges burned down
-[00:50.01] I've wasted my nights
-[00:52.94] You turned out the lights
-[00:55.87] Now I'm paralyzed
-[00:58.80] Still stuck in that time
-[01:01.73] When we called it "Love"
-[01:04.66] But even the sun
-[01:07.59] Sets in paradise
-[01:10.52] I'm at a payphone trying to call home
-[01:16.39] All of my change I spent on you
-[01:22.26] Where have the times gone
-[01:25.19] Baby it's all wrong
-[01:28.12] Where are the plans we made for two
-[01:32.05] If happy-ever-after's did exist
-[01:35.98] I would still be holding you like this
-[01:39.91] All those fairytales are full of ****
-[01:42.84] One more ******* love song I'll be sick oh
-[01:46.77] You turned your back on tomorrow
-[01:49.70] 'Cause you forgot yesterday
-[01:52.63] I gave you my love to borrow
-[01:55.56] But you just gave it away
-[01:58.49] You can't expect me to be fine
-[02:01.42] I don't expect you to care
-[02:04.35] I know I said it before
-[02:07.28] But all of our bridges burned down
-[02:10.21] I've wasted my nights
-[02:13.14] You turned out the lights
-[02:16.07] Now I'm paralyzed
-[02:19.00] Still stuck in that time
-[02:21.93] When we called it "Love"
-[02:24.86] But even the sun
-[02:27.79] Sets in paradise
-[02:30.72] I'm at a payphone trying to call home
-[02:36.59] All of my change I spent on you
-[02:39.52] Whoa whoa-oa
-[02:41.48] Where have the times gone
-[02:44.41] Baby it's all wrong
-[02:47.34] Where are the plans we made for two
-[02:50.27] Yeah
-[02:51.24] If happy-ever-after's did exist
-[02:54.17] I would still be holding you like this
-[02:57.10] And all those fairytales are full of ****
-[03:00.03] One more ******* love song I'll be sick
-[03:03.96] Uh Now I'm at a payphone
-[03:06.89] Man **** that ****
-[03:08.86] I'll be out spending all this money while you're sitting 'round
-[03:11.79] Wondering why it wasn't you who came up from nothin'
-[03:14.72] Made it from the bottom now when you see me I'm stuntin'
-[03:17.65] And all of my cars start with the push of a button
-[03:20.58] Telling me I changed since I blew up or whatever you call it
-[03:23.51] Switched the number to my phone so you never could call it
-[03:26.44] Don't need my name on my shirt you can tell that I'm ballin'
-[03:29.37] Swish what a shame coulda got picked
-[03:31.33] Had a really good game but you missed your last shot
-[03:34.26] So you talk about who you see at the top
-[03:37.19] Or what you could've saw but sad to say it's over for
-[03:40.12] Phantom pulled up valet open doors
-[03:42.09] Wished I'd go away got what you was looking for
-[03:45.02] Now it's me who they want
-[03:47.95] So you can go take that little piece of **** with you`
+        lyric: `[00:01.07]잘 알지도 못하면서 - 림킴 (김예림) (Lim Kim)
+[00:04.26]TME享有本翻译作品的著作权
+[00:04.26]词：정준일
+[00:05.76]曲：정준일
+[00:07.01]编曲：정준일/권영찬
+[00:26.82]잘 알지도 못 하면서
+[00:30.19]明明不太懂
+[00:30.19]다 알지도 못 하면서
+[00:33.50]明明什么都不懂
+[00:33.50]왜 매번 날 다그치기만 해
+[00:40.29]为何每次都只是在催促着我
+[00:40.29]내가 아닌 날 말하고
+[00:43.53]讲述着不像我的自己
+[00:43.53]내가 없는 진실들로
+[00:46.88]用那些没有我的真相
+[00:46.88]그렇게 날 다그치기만 해
+[00:53.64]那样子催促着我
+[00:53.64]어디에도 내 쉴 곳은 없네
+[01:00.24]我没有一处地方可以休息
+[01:00.24]길 잃은 어린 소녀의 노래
+[01:06.81]迷路的小小少女之歌
+[01:06.81]익숙해진 두려움과
+[01:10.15]愈发熟悉的恐惧
+[01:10.15]몸에 배인 침묵 속에
+[01:13.51]以及在已经习惯的沉默里
+[01:13.51]외로움도 무뎌져만 가네
+[01:18.90]孤独也渐渐变得麻木
+[01:18.90]날 미워하지 마
+[01:21.45]不要埋怨我
+[01:21.45]내가 아닌 나를 나인 것처럼
+[01:25.39]就好像将那并非是的自己 当作是真正的我
+[01:25.39]날 미워하지 마
+[01:28.37]不要埋怨我
+[01:28.37]왜 내가 아닌 나를 나라고 믿어
+[01:32.13]为什么相信那个不是我的自己是我
+[01:32.13]날 미워하지 마 날 미워하지 마
+[01:40.15]不要埋怨我 不要埋怨我
+[01:40.15]알 수 없는 사람들과
+[01:43.43]那些未知的人群
+[01:43.43]다른 색의 표정과 말
+[01:46.75]以及各色的表情和话语
+[01:46.75]넌 대체 내게 뭘 원하는데
+[01:53.52]你到底渴望我什么
+[01:53.52]조심스런 맘 졸이며
+[01:56.82]小心翼翼 内心焦虑着
+[01:56.82]겨우 한 걸음 내딛어
+[02:00.03]勉强迈出一步
+[02:00.03]이 세상이 난 너무 무서워
+[02:06.89]我太过害怕这个世界
+[02:06.89]어디에도 내 쉴 곳은 없네
+[02:11.05]我没有一处地方可以休息
+[02:11.05]I was off in some empty daydream
+[02:13.65]길 잃은 어린 소녀의 노래
+[02:17.40]迷路的小小少女之歌
+[02:17.40]She waved hello silent like a mime
+[02:20.50]익숙해진 두려움과
+[02:23.47]愈发熟悉的恐惧
+[02:23.47]몸에 배인 침묵 속에
+[02:26.81]以及在已经习惯的沉默里
+[02:26.81]외로움도 무뎌져만 가네
+[02:32.13]孤独也渐渐变得麻木
+[02:32.13]날 미워하지 마
+[02:35.15]不要埋怨我
+[02:35.15]내가 아닌 나를 나인 것처럼
+[02:38.75]并非是我的我 就像是我一样
+[02:38.75]날 미워하지 마
+[02:41.53]不要埋怨我
+[02:41.53]왜 내가 아닌 나를 나라고 믿어
+[02:45.43]为什么相信那个不是我的自己是我
+[02:45.43]언제부턴가 넌 날 조르고 밀어
+[02:54.49]从何时开始 你纠缠我 推开我
+[02:54.49]No alarms and no surprises please
+[02:58.91]날 미워하지 마
+[03:01.58]不要埋怨我
+[03:01.58]내가 아닌 나를 나인 것처럼
+[03:05.41]并非是我的我 就像是我一样
+[03:05.41]날 미워하지 마
+[03:08.25]不要埋怨我
+[03:08.25]왜 내가 아닌 나를 나라고 믿어
+[03:12.12]为什么相信那个不是我的自己是我
+[03:12.12]날 미워하지 마 날 미워하지 마
+[03:21.99]不要埋怨我 不要埋怨我
+[03:21.99]날 사랑하지 마
+[03:50.59]不要爱我
+[03:50.59]차가운 새벽 겨울
+[03:53.61]寒冷的凌晨冬天
+[03:53.61]누군가의 손에 이끌려
+[03:56.87]被谁的手牵引着
+[03:56.87]이별을 말하지 못하고
+[04:00.09]说不出离别
+[04:00.09]멀리 낯선 하늘 아래 놓여진
+[04:04.06]置身在远处陌生天空下的
+[04:04.06]익숙하지 않은 사람들
+[04:06.87]那些并不熟悉的人们
+[04:06.87]거대한 세상의 분노에
+[04:10.13]面对广阔世界的愤怒
+[04:10.13]나는 나를 지켜야 했어
+[04:13.50]我必须要守护我自己
+[04:13.50]그렇게 나를 지켜내야 했어
+[04:17.58]我必须那样守护自己
+[04:17.58]차가운 새벽 겨울
+[04:20.16]寒冷的凌晨冬天
+[04:20.16]누군가의 손에 이끌려
+[04:23.43]被谁的手牵引着
+[04:23.43]이별을 말하지 못하고
+[04:26.79]说不出离别
+[04:26.79]멀리 낯선 하늘 아래 놓여진
+[04:30.68]置身在远处陌生天空下的
+[04:30.68]익숙하지 않은 사람들
+[04:33.41]那些并不熟悉的人们
+[04:33.41]거대한 세상의 분노에
+[04:36.77]面对广阔世界的愤怒
+[04:36.77]나는 나를 지켜야 했어
+[04:40.18]我必须要守护我自己
+[04:40.18]그렇게 나를 지켜내야 했어
+[04:48.58]我必须那样守护自己
+[04:48.58]나를 지켜야 했어
+[04:55.16]必须要守护我自己
+[04:55.16]나를 지켜야 했어
+[05:00.01]必须要守护我自己`
     }
 
 ];

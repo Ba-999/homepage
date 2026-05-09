@@ -351,3 +351,29 @@ window.addEventListener('load', function() {
     }, 100);
 });
 
+// 计时器：从 2024-11-01 开始计算
+(function() {
+    var start = new Date('2025-10-01T00:00:00');
+    var daysEl = document.getElementById('countupDays');
+    var clockEl = document.getElementById('countupClock');
+    if (!daysEl || !clockEl) return;
+
+    function pad(n) { return n < 10 ? '0' + n : n; }
+
+    function tick() {
+        var now = new Date();
+        var diff = now - start;
+        var totalSec = Math.floor(diff / 1000);
+        var days = Math.floor(totalSec / 86400);
+        var hours = Math.floor((totalSec % 86400) / 3600);
+        var mins = Math.floor((totalSec % 3600) / 60);
+        var secs = totalSec % 60;
+
+        daysEl.textContent = days;
+        clockEl.textContent = pad(hours) + ':' + pad(mins) + ':' + pad(secs);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+})();
+
